@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="results-section">
+    <div class="container">
+        <br><br>
+        {% if name %}
+        <b>App name     : </b>{{ name|safe }}<br>
+        <b>App version  : </b>{{ version|safe }}<br>
+        <b>Changelog    : </b>{{ changelog|safe }}<br>
+        <b>Release date : </b>{{ release_date|safe }}<br>
+        {% endif %}
+  
+        {% if error %}
+        {{ error|safe }}
+        {% endif %}
+  
+    </div>
+  </main>
+{% endblock %}

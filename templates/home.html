@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="container home-section">
+    <div class="section-content">
+      <form method="POST" action="/home">
+        {{ form.hidden_tag() }}
+
+        <div class="form-group">
+          {{ form.url.label }}
+
+          {% if form.url.errors %}
+            {% for error in form.url.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.url }}
+        </div>
+
+        {{ form.submit(class="btn-primary") }}
+
+      </form>
+    </div>
+  </main>
+{% endblock %}
