@@ -40,4 +40,4 @@ Done:
 ToDo:
     - Document code by adding more unittests
     - Code cleaning/Refactoring
-    -
+    - Use proxies and rotating IP addresses to bypass anti-scraping measures and prevent being detected as a scraper.
