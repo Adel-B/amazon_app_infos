@@ -1,0 +1,43 @@
+----------------------------------------------------------
+First Solution: using the "Amazon Product Advertising API"
+----------------------------------------------------------
+!!!I need to get Access Keys in order to make requests to the Amazon Product Advertising API!!!
+needed => (access_key_id, secret_key, associate_tag, marketplace_correspondant) 
+
+Done:
+    - Create an amazon account
+    - Create an amazon associates account https://affiliate-program.amazon.com/
+    - Make more than three purchase + increase number of clicks : to get authorized to join/use Amazon Product Advertising API
+    - Wait !!!!
+    - Email Amazon.com Associate Support & Wait !!! 
+
+Blocked
+    - Sign up as a Product Advertising API developer based the locale
+
+ToDo 
+    IF (I'm authorized to use Amazon Product Advertising API):
+        - Create New Access keys
+        - Explore the "Amazon Product Advertising API"
+        - understand how to use ItemLookup (it seems to be solution  in our case to search for an item based on an identifier such as ASIN)
+        - Do the server code side & use the Amazon Product Advertising API
+
+    ELSE:
+        - Mock the Amazon Product Advertising API : create a fake server sending back a json response with needed app info from amazon
+        - do the server code side & use the Mocked API instead of Amazon Product Advertising API
+
+
+---------------------------------------
+Second Solution: using the Web Scraping
+---------------------------------------
+!!!I'm not convinced to use the web scraping  in production because it can be frustrating when site just makes a subtle change on its layout!!!
+I'm using it because I did not get the authorisation yet to use the Amazon Product Advertising API
+
+Done:
+    - coding
+    - testing (unit, QA, Prod)
+    - Deployment on Heroku
+
+ToDo:
+    - Document code by adding more unittests
+    - Code cleaning/Refactoring
+    -
